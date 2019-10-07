@@ -32,7 +32,20 @@
           android:id="@+id/toolbar"
           style="@style/Widget.AppCompat.Toolbar"
           android:layout_width="match_parent"
-          android:layout_height="wrap_content" />
+          android:layout_height="wrap_content"
+          app:layout_collapseMode="pin"
+          app:navigationIcon="@drawable/abc_vector_test">
+
+          <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.Toolbar>
       </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

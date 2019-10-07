@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
     binding = DataBindingUtil.setContentView(this, R.layout.main_act)
     setSupportActionBar(binding.toolbar)
 
+//    binding.toolbar.title = "TITLE"
+//    binding.toolbar.setTitleTextColor(
+//      ContextCompat.getColor(this, android.R.color.white)
+//    )
+
     with(binding.recycler) {
       layoutManager = LinearLayoutManager(this@MainActivity)
       adapter = MainAdapter()
