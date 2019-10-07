@@ -2,7 +2,6 @@ import static dependencies.DependenciesKt.*
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -22,6 +21,10 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
+
+  dataBinding {
+    enabled = true
+  }
 }
 
 dependencies {
@@ -38,6 +41,9 @@ dependencies {
   kapt DAGGER_ANDROID_COMPILER
 
   implementation GLIDE
+
+  implementation GROUPIE
+  implementation GROUPIE_DATABINDING
 
   testImplementation JUNIT
 

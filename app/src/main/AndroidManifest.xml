@@ -22,12 +22,8 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".MainActivity" />
-
-    <activity android:name=".HideNavigationActivity" />
-
     <activity
-      android:name=".LightNavigationActivity"
-      android:theme="@style/AppTheme.LightNavigation" />
+      android:name=".MainActivity"
+      android:theme="@style/AppTheme.NoActionBar" />
   </application>
 </manifest>

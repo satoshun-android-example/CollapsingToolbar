@@ -10,16 +10,10 @@ class AppActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.app_act)
 
-    findViewById<View>(R.id.dialog).setOnClickListener {
-      startActivity(Intent(this@AppActivity, MainActivity::class.java))
-    }
-
-    findViewById<View>(R.id.navigation).setOnClickListener {
-      startActivity(Intent(this@AppActivity, HideNavigationActivity::class.java))
-    }
-
-    findViewById<View>(R.id.navigation2).setOnClickListener {
-      startActivity(Intent(this@AppActivity, LightNavigationActivity::class.java))
+    findViewById<View>(R.id.collapsing).setOnClickListener {
+      startActivity(
+        Intent(this@AppActivity, MainActivity::class.java)
+      )
     }
   }
 }
