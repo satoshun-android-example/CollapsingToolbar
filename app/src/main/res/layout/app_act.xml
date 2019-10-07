@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/coordinator"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <Button
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Dialog"
+    tools:ignore="HardcodedText" />
+
+  <Button
+    android:id="@+id/navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="hide navigation"
+    tools:ignore="HardcodedText" />
+
+  <Button
+    android:id="@+id/navigation2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="hide navigation2"
+    tools:ignore="HardcodedText" />
+</LinearLayout>
