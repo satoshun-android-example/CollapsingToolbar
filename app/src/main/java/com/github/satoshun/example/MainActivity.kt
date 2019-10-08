@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
     binding = DataBindingUtil.setContentView(this, R.layout.main_act)
     setSupportActionBar(binding.toolbar)
 
-    binding.collapsing.title = "TITLE"
     binding.collapsing.setCollapsedTitleTextColor(ContextCompat.getColor(this, android.R.color.white))
     binding.collapsing.setExpandedTitleColor(ContextCompat.getColor(this, android.R.color.white))
+
+    binding.collapsing.contentScrim = getDrawable(R.drawable.main_gradient_color)
 
     with(binding.recycler) {
       layoutManager = LinearLayoutManager(this@MainActivity)

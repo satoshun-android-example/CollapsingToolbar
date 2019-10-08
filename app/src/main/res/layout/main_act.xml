@@ -18,8 +18,11 @@
         android:id="@+id/collapsing"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:contentScrim="?attr/colorPrimary"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        android:background="@drawable/main_gradient_color"
+        app:expandedTitleGravity="top|center_horizontal"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:statusBarScrim="@drawable/main_gradient_color"
+        app:title="TITLE">
 
         <!--        <TextView-->
         <!--          android:id="@+id/title"-->
