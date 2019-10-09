@@ -15,5 +15,11 @@ class AppActivity : AppCompatActivity() {
         Intent(this@AppActivity, MainActivity::class.java)
       )
     }
+
+    findViewById<View>(R.id.collapsing2).setOnClickListener {
+      startActivity(
+        Intent(this@AppActivity, MainActivity2::class.java)
+      )
+    }
   }
 }

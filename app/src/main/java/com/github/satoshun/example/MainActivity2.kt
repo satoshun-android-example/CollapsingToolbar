@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.satoshun.example.databinding.MainActBinding
+import com.github.satoshun.example.databinding.Main2ActBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
 
-  private lateinit var binding: MainActBinding
+  private lateinit var binding: Main2ActBinding
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    binding = DataBindingUtil.setContentView(this, R.layout.main_act)
+    binding = DataBindingUtil.setContentView(this, R.layout.main2_act)
     setSupportActionBar(binding.toolbar)
 
     binding.collapsing.setCollapsedTitleTextColor(ContextCompat.getColor(this, android.R.color.white))
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 //    binding.collapsing.setContentScrimColor(ContextCompat.getColor(this, android.R.color.white))
 
     with(binding.recycler) {
-      layoutManager = LinearLayoutManager(this@MainActivity)
+      layoutManager = LinearLayoutManager(this@MainActivity2)
       adapter = MainAdapter()
     }
   }
