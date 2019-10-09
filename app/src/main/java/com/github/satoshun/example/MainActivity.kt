@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     binding.collapsing.setCollapsedTitleTextColor(ContextCompat.getColor(this, android.R.color.white))
     binding.collapsing.setExpandedTitleColor(ContextCompat.getColor(this, android.R.color.white))
 
-    binding.collapsing.contentScrim = getDrawable(R.drawable.main_gradient_color)
+//    binding.collapsing.setContentScrimColor(ContextCompat.getColor(this, android.R.color.white))
 
     with(binding.recycler) {
       layoutManager = LinearLayoutManager(this@MainActivity)
