@@ -27,7 +27,7 @@
       android:theme="@style/AppTheme.NoActionBar" />
 
     <activity
-      android:name=".MainActivity2"
+      android:name=".fadeinout.FadeInOutToolbarActivity"
       android:theme="@style/AppTheme.NoActionBar" />
   </application>
 </manifest>

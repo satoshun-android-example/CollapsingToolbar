@@ -10,6 +10,7 @@
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
       style="ThemeOverlay.AppCompat.Light"
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
@@ -19,19 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/main_gradient_color"
-        app:collapsedTitleTextAppearance="@style/AppTheme.NoActionBar.HOGE"
-        app:contentScrim="@android:color/white"
-        app:expandedTitleGravity="top|center_horizontal"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
-        app:title="TITLE">
-
-        <!--        <TextView-->
-        <!--          android:id="@+id/title"-->
-        <!--          android:layout_width="match_parent"-->
-        <!--          android:layout_height="wrap_content"-->
-        <!--          android:text="HOGEHOGE"-->
-        <!--          app:layout_collapseMode="parallax"-->
-        <!--          tools:ignore="HardcodedText" />-->
+        app:titleEnabled="false">
 
         <ImageView
           android:id="@+id/image"
@@ -40,7 +30,6 @@
           android:layout_marginTop="60dp"
           android:adjustViewBounds="true"
           android:src="@drawable/ic_launcher_foreground"
-          app:layout_collapseMode="parallax"
           tools:ignore="ContentDescription" />
 
         <androidx.appcompat.widget.Toolbar
@@ -51,18 +40,8 @@
           app:layout_collapseMode="pin"
           app:menu="@menu/main_menu"
           app:navigationIcon="@drawable/abc_vector_test"
-          app:titleTextColor="@android:color/black">
-
-          <!--          <TextView-->
-          <!--            android:id="@+id/title"-->
-          <!--            android:layout_width="wrap_content"-->
-          <!--            android:layout_height="wrap_content"-->
-          <!--            android:text="TITLE"-->
-          <!--            android:textColor="@android:color/white"-->
-          <!--            android:textSize="16sp"-->
-          <!--            android:textStyle="bold"-->
-          <!--            tools:ignore="HardcodedText" />-->
-        </androidx.appcompat.widget.Toolbar>
+          app:title="HOGEHOGE"
+          app:titleTextColor="@android:color/white" />
       </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
