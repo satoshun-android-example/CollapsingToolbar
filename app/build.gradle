@@ -35,6 +35,13 @@ dependencies {
   implementation CONSTRAINTLAYOUT
   implementation KTX
 
+  implementation LIFECYCLE_RUNTIME
+
+  implementation COROUTINE
+  implementation UI_COROUTINE
+
+  implementation SWIPE_REFRESH_LAYOUT
+
   implementation DAGGER_RUNTIME
   kapt DAGGER_COMPILER
   implementation DAGGER_ANDROID_RUNTIME

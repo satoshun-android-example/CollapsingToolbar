@@ -21,6 +21,8 @@ const val KTX = "androidx.core:core-ktx:1.1.0"
 const val ACTIVITYX = "androidx.activity:activity-ktx:1.0.0"
 const val FRAGMENTX = "androidx.fragment:fragment-ktx:1.1.0"
 
+const val LIFECYCLE_RUNTIME = "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha04"
+
 const val APPCOMPAT = "androidx.appcompat:appcompat:1.1.0"
 const val RECYCLERVIEW = "androidx.recyclerview:recyclerview:1.1.0-beta04"
 const val CONSTRAINTLAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-alpha4"
@@ -51,6 +53,8 @@ const val BIOMETRIC = "androidx.biometric:biometric:1.0.0-alpha03"
 const val EMOJI = "androidx.emoji:emoji:1.0.0"
 const val EMOJI_COMPAT = "androidx.emoji:emoji-appcompat:1.0.0"
 const val EMOJI_BUNDLED = "androidx.emoji:emoji-bundled:1.0.0"
+
+const val SWIPE_REFRESH_LAYOUT = "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
 const val SAVEDSTATE = "androidx.savedstate:savedstate:1.0.0-alpha02"
 const val SAVEDSTATE_VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-alpha01"

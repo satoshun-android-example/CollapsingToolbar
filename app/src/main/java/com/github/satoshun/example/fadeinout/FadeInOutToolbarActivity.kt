@@ -4,11 +4,14 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.coroutineScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.satoshun.example.MainAdapter
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.FadeInOutToolbarActBinding
 import com.google.android.material.appbar.AppBarLayout
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class FadeInOutToolbarActivity : AppCompatActivity() {
 
@@ -53,5 +56,12 @@ class FadeInOutToolbarActivity : AppCompatActivity() {
         )
       }
     })
+
+    binding.swipe.setOnRefreshListener {
+      lifecycle.coroutineScope.launch {
+        delay(2000)
+        binding.swipe.isRefreshing = false
+      }
+    }
   }
 }

@@ -45,12 +45,18 @@
       </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/recycler"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:id="@+id/swipe"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:clipToPadding="false"
-      android:paddingTop="32dp"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="32dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
