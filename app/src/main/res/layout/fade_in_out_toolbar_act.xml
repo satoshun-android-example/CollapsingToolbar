@@ -32,52 +32,67 @@
           android:src="@drawable/ic_launcher_foreground"
           tools:ignore="ContentDescription" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-          android:id="@+id/sub_item"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:layout_marginTop="?attr/actionBarSize"
-          android:background="@android:color/white"
-          android:visibility="invisible"
-          app:layout_collapseMode="pin"
-          tools:visibility="visible">
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="FUGAFUGA"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
-
-          <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="HOGEHOGE"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <androidx.appcompat.widget.Toolbar
           android:id="@+id/toolbar"
           style="@style/Widget.AppCompat.Toolbar"
           android:layout_width="match_parent"
-          android:layout_height="?attr/actionBarSize"
+          android:layout_height="140dp"
           android:elevation="0dp"
-          app:layout_collapseMode="pin"
-          app:menu="@menu/main_menu"
-          app:navigationIcon="@drawable/abc_vector_test"
-          app:title="HOGEHOGE"
-          app:titleTextColor="@android:color/white" />
+          app:contentInsetStart="0dp"
+          app:layout_collapseMode="pin">
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sub_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <ImageView
+              android:id="@+id/back"
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="8dp"
+              android:padding="2dp"
+              android:src="@drawable/abc_vector_test"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:tint="@android:color/white" />
+
+            <TextView
+              android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="TITLE"
+              app:layout_constraintBottom_toBottomOf="@id/back"
+              app:layout_constraintStart_toEndOf="@id/back"
+              app:layout_constraintTop_toTopOf="@id/back" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:text="FUGAFUGA"
+              android:textColor="@android:color/black"
+              android:textSize="20sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="HardcodedText" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="16dp"
+              android:text="HOGEHOGE"
+              android:textColor="@android:color/black"
+              android:textSize="20sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="HardcodedText" />
+          </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
       </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -37,13 +37,12 @@ class FadeInOutToolbarActivity : AppCompatActivity() {
             android.R.color.transparent
           )
         )
-        binding.toolbar.setTitleTextColor(
+        binding.title.setTextColor(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.white)
         )
-        binding.toolbar.navigationIcon?.mutate()?.setTint(
+        binding.back?.drawable?.mutate()?.setTint(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.white)
         )
-        binding.subItem.isInvisible = true
       } else {
         binding.toolbar.setBackgroundColor(
           ContextCompat.getColor(
@@ -51,13 +50,12 @@ class FadeInOutToolbarActivity : AppCompatActivity() {
             android.R.color.white
           )
         )
-        binding.toolbar.setTitleTextColor(
+        binding.title.setTextColor(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.black)
         )
-        binding.toolbar.navigationIcon?.mutate()?.setTint(
+        binding.back?.drawable?.mutate()?.setTint(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.black)
         )
-        binding.subItem.isVisible = true
       }
     })
 
