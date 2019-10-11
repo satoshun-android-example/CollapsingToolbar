@@ -3,6 +3,8 @@ package com.github.satoshun.example.fadeinout
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.coroutineScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -41,6 +43,7 @@ class FadeInOutToolbarActivity : AppCompatActivity() {
         binding.toolbar.navigationIcon?.mutate()?.setTint(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.white)
         )
+        binding.subItem.isInvisible = true
       } else {
         binding.toolbar.setBackgroundColor(
           ContextCompat.getColor(
@@ -54,6 +57,7 @@ class FadeInOutToolbarActivity : AppCompatActivity() {
         binding.toolbar.navigationIcon?.mutate()?.setTint(
           ContextCompat.getColor(this@FadeInOutToolbarActivity, android.R.color.black)
         )
+        binding.subItem.isVisible = true
       }
     })
 

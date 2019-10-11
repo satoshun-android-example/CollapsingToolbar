@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/main_gradient_color"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
         app:titleEnabled="false">
 
         <ImageView
@@ -32,11 +32,47 @@
           android:src="@drawable/ic_launcher_foreground"
           tools:ignore="ContentDescription" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/sub_item"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:layout_marginTop="?attr/actionBarSize"
+          android:background="@android:color/white"
+          android:visibility="invisible"
+          app:layout_collapseMode="pin"
+          tools:visibility="visible">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="FUGAFUGA"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="HOGEHOGE"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.appcompat.widget.Toolbar
           android:id="@+id/toolbar"
           style="@style/Widget.AppCompat.Toolbar"
           android:layout_width="match_parent"
           android:layout_height="?attr/actionBarSize"
+          android:elevation="0dp"
           app:layout_collapseMode="pin"
           app:menu="@menu/main_menu"
           app:navigationIcon="@drawable/abc_vector_test"
